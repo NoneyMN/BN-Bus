@@ -1,5 +1,4 @@
 <template>
-  <div>
     <v-container>
       <v-row>
         <v-btn @click="navigateTo('/passenger/sign-in')">back</v-btn>
@@ -22,5 +21,4 @@
         </v-col>
       </v-row>
     </v-container>
-  </div>
 </template>
