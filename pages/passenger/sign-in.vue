@@ -1,12 +1,18 @@
 <template>
     <v-container>
       <v-row>
+      <v-col cols="3">
         <v-btn @click="navigateTo('/')">back</v-btn>
-      </v-row>
+      </v-col>
+      <v-col cols="6">
+        <h4 class="text-center">Login</h4>
+      </v-col>
+      <v-spacer></v-spacer>
+    </v-row>
       <v-row>
         <v-col>
           <v-img width="100" src="/images/green-bus.png"></v-img>
-          <h2>Welcome to<br />BN: Bus</h2>
+          <h2>Welcome to<br />BN Bus</h2>
         </v-col>
       </v-row>
       <v-row>

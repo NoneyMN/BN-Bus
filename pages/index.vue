@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h1 class="text-center">BN: Bus</h1>
+    <h1 class="text-center">BN Bus</h1>
     <v-row>
       <v-spacer></v-spacer>
       <v-col cols="10">
