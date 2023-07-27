@@ -2,7 +2,7 @@
   <div>
     <v-container>
       <v-row>
-        <v-btn @click="navigateTo('/index')">back</v-btn>
+        <v-btn @click="navigateTo('/')">back</v-btn>
       </v-row>
       <v-row>
         <v-col>
