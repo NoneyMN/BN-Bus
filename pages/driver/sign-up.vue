@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-col cols="3">
-        <v-btn @click="navigateTo('/passenger/sign-in')">back</v-btn>
+        <v-btn @click="navigateTo('/driver/sign-in')">back</v-btn>
       </v-col>
       <v-col cols="6">
         <h4 class="text-center">Register</h4>
@@ -34,7 +34,7 @@
             <v-radio label="Driver" value="2"></v-radio>
           </v-radio-group>
           <div class="text-center">
-            <v-btn color="primary" @click="navigateTo('/passenger/sign-in')">Sign up</v-btn>
+            <v-btn color="primary" @click="navigateTo('/driver/sign-in')">Sign up</v-btn>
           </div>
         </v-form>
       </v-col>
