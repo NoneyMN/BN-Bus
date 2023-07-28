@@ -6,7 +6,7 @@
   <v-container>
     <v-row>
       <v-col cols="3">
-        <v-btn @click="navigateTo('/passenger/sign-in')">menu</v-btn>
+        <NavMenu />
       </v-col>
       <v-col cols="6">
         <h4 class="text-center">Nearby Bus Stops</h4>
@@ -14,7 +14,9 @@
       <v-spacer></v-spacer>
     </v-row>
     <v-row>
-      <v-text-field label="Tap to add destination"></v-text-field>
+      <v-col>
+        <v-text-field label="Tap to add destination"></v-text-field>
+      </v-col>
     </v-row>
     <!-- RECENT TICKET -->
     <v-row class="h-screen d-flex align-center">
@@ -25,7 +27,7 @@
               <h4>Recent Ticket Booked</h4>
             </v-col>
             <v-col cols="4" class="d-flex justify-end">
-              <h5>View All</h5>
+              <h5 class="text-primary" @click="navigateTo('/passenger/my-tickets')">View All</h5>
             </v-col>
           </v-row>
           <v-divider></v-divider>
@@ -35,6 +37,7 @@
             <v-row class="my-1">
               <v-col cols="9">
                 <v-card-subtitle>Jalan Ripas</v-card-subtitle>
+                <v-card-subtitle>to</v-card-subtitle>
                 <v-card-subtitle>Jalan Gadong</v-card-subtitle>
               </v-col>
               <v-col cols="3" class="d-flex align-center">QR</v-col>
@@ -42,10 +45,10 @@
             <v-divider></v-divider>
             <v-row class="ma-1">
               <v-col cols="6">
-                <h5>Live Status</h5>
+                <h5 class="text-primary" @click="navigateTo('/passenger/bus-live-status')">Live Status</h5>
               </v-col>
               <v-col cols="6" class="d-flex justify-end">
-                <h5>Ticket Details</h5>
+                <h5 class="text-primary" @click="navigateTo('/passenger/scan-ticket')">Ticket Details</h5>
               </v-col>
             </v-row>
           </v-sheet>
