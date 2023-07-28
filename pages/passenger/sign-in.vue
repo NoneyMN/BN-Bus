@@ -23,13 +23,20 @@
         <v-form>
           <v-text-field label="Phone number"></v-text-field>
           <v-text-field label="Password"></v-text-field>
-          <v-btn @click="navigateTo('/passenger/home')">Sign in</v-btn>
+          <div class="text-center">
+            <v-btn color="primary" @click="navigateTo('/passenger/home')"
+              >Sign in</v-btn
+            >
+          </div>
         </v-form>
       </v-col>
     </v-row>
-    <v-row>
+    <v-row class="text-center">
       <v-col>
-        <p>New user? <a href="/passenger/sign-up">Sign up</a></p>
+        <p>
+          New user?
+          <a class="text-primary" href="/passenger/sign-up">Sign up</a>
+        </p>
       </v-col>
     </v-row>
   </v-container>
