@@ -11,8 +11,11 @@
     </v-row>
     <v-row>
       <v-col>
-        <v-img width="100" src="/images/green-bus.png"></v-img>
-        <h2>Welcome to<br />BN Bus</h2>
+        <v-img height="150" src="/images/green-bus.png"></v-img>
+        <h2 class="text-center">
+          BN Bus <br />
+          Passenger
+        </h2>
       </v-col>
     </v-row>
     <v-row>
