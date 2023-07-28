@@ -11,10 +11,10 @@
     </v-row>
     <v-row>
       <v-col>
-        <v-img height="150" src="/images/green-bus.png"></v-img>
+        <v-img height="150" src="/images/purple-bus.png"></v-img>
       </v-col>
       <v-col>
-        <v-img height="150" src="/images/purple-bus.png"></v-img>
+        <v-img height="150" src="/images/green-bus.png"></v-img>
       </v-col>
     </v-row>
     <v-row class="mt-0">
