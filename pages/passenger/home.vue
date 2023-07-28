@@ -6,7 +6,7 @@
   <v-container>
     <v-row>
       <v-col cols="3">
-        <NavMenu />
+        <NavMenuP />
       </v-col>
       <v-col cols="6">
         <h4 class="text-center">Nearby Bus Stops</h4>
