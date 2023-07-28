@@ -24,7 +24,7 @@
           <v-text-field label="Phone number"></v-text-field>
           <v-text-field label="Password"></v-text-field>
           <div class="text-center">
-            <v-btn color="primary" @click="navigateTo('/passenger/home')"
+            <v-btn color="primary" @click="navigateTo('/driver/home')"
               >Sign in</v-btn
             >
           </div>

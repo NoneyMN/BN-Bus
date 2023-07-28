@@ -34,7 +34,9 @@
             <v-radio label="Driver" value="2"></v-radio>
           </v-radio-group>
           <div class="text-center">
-            <v-btn color="primary" @click="navigateTo('/driver/sign-in')">Sign up</v-btn>
+            <v-btn color="primary" @click="navigateTo('/driver/sign-in')"
+              >Sign up</v-btn
+            >
           </div>
         </v-form>
       </v-col>
