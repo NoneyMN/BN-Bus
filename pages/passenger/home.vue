@@ -18,6 +18,11 @@
         <v-text-field label="Tap to add destination"></v-text-field>
       </v-col>
     </v-row>
+    <v-row>
+      <v-col>
+        map background
+      </v-col>
+    </v-row>
     <!-- RECENT TICKET -->
     <v-row class="h-screen d-flex align-center">
       <v-col>

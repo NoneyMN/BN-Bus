@@ -14,7 +14,12 @@
         <v-text-field label="Enter bus number"></v-text-field>
       </v-col>
     </v-row>
-    <v-row class="h-screen d-flex align-center mt-16">
+    <v-row>
+      <v-col>
+        map background
+      </v-col>
+    </v-row>
+    <v-row class="h-screen d-flex align-center mt-10">
       <v-col>
         <v-sheet elevation="12" rounded="lg" class="py-1">
           <v-row class="px-4 mt-0">
