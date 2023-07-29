@@ -10,7 +10,10 @@
         <h4 class="text-center">Bus Route</h4>
       </v-col>
       <v-col cols="4">
-        <v-btn color="green">Start Trip</v-btn>
+        <v-btn v-if="isActive" color="green" @click="toggleSwitch(false)">
+          Start trip
+        </v-btn>
+        <v-btn v-else color="red" @click="toggleSwitch(true)"> End trip </v-btn>
       </v-col>
     </v-row>
   </v-container>
@@ -63,12 +66,12 @@
   </v-navigation-drawer>
   <v-app-bar location="bottom">
     <v-row @click.stop="drawer = !drawer">
-        <v-col cols="8">
-            <h4 class="px-4 mt-0">Bus Route</h4>
-        </v-col>
-        <v-col cols="4" class="d-flex justify-end">
-            <p class="px-4 mt-0">Expand</p>
-        </v-col>
+      <v-col cols="8">
+        <h4 class="px-4 mt-0">Bus Route</h4>
+      </v-col>
+      <v-col cols="4" class="d-flex justify-end">
+        <p class="px-4 mt-0">Expand</p>
+      </v-col>
     </v-row>
   </v-app-bar>
 </template>
@@ -78,7 +81,22 @@ export default {
   data() {
     return {
       drawer: null,
+      isActive: true,
     };
+  },
+  methods: {
+    toggleSwitch(value) {
+      // Handle the toggle action
+      this.isActive = value;
+      console.log("Toggle state:", this.isActive);
+    },
+  },
+  computed: {
+    // Computed property to determine the current state of the toggle button
+    // This can be useful if you want to style the buttons based on the state.
+    isActiveState() {
+      return this.isActive ? "on" : "off";
+    },
   },
 };
 </script>
